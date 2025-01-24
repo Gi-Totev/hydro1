@@ -1,0 +1,47 @@
+.header {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 1;
+}
+
+.header__logo img {
+  width: 10.8rem;
+}
+
+.header-menu-mobile-toggle {
+  @media (min-width: 48em) {
+    display: none;
+  }
+}
+
+.header-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+
+.header-menu-desktop {
+  display: none;
+  grid-gap: 1rem;
+
+  @media (min-width: 45em) {
+    display: flex;
+    grid-gap: 3rem;
+    margin-left: 3rem;
+  }
+}
+
+.header-menu-item {
+  cursor: pointer;
+}
+
+.header-ctas {
+  align-items: center;
+  display: flex;
+  grid-gap: 1rem;
+  margin-left: auto;
+}
